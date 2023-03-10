@@ -1,0 +1,130 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+*{
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  
+}
+
+body{
+    background-color: var(--bgcolor);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.container{
+    width: 60%;
+    padding: 6rem 1rem;
+    min-width: 500px;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondaryColor);
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+}
+
+h2{
+    color: white;
+
+}
+label{
+    color: white;
+    display: block;
+    float: left;
+    font-size: 0.8em;
+    margin-top: 20px;
+    font-weight: 500;
+}
+form{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+input{
+    display: block;
+    width: 100%;
+    align-self: center;
+    height: 30px;
+    border-radius: 5px;
+    
+}
+input[type="email"] ,input[type="password"]{
+    background-color: rgba(255, 255, 255, 0.1);
+    text-indent: 15px;
+    transition: all 0.2s;
+    color: white;
+    border: none;
+}
+input[type="email"]:hover,input[type="password"]:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+input[type="email"]:focus,input[type="password"]:focus{
+    background-color: rgb(255, 255, 255);
+    outline: none;
+    border: none;
+    box-shadow: 0px 0px 2px white;
+    color: black;
+}
+input[type="email"]:focus:hover,input[type="password"]:focus:hover{
+    background-color: rgb(255, 255, 255) important;
+    outline: none;
+    border: none;
+    box-shadow: 0px 0px 2px white;
+    color: black;
+}
+form a {
+  color: white;
+  opacity: 70%;  
+  text-decoration: none;
+  font-size: 0.6em;
+  padding-top: 5px;
+  padding-bottom: 14px;
+}
+form a:hover{
+    opacity: 90%;
+}
+input[type = "submit"]{
+    color: white;
+    background-color: var(--tencolor);
+    height: 35px;
+    border: 2px solid var(--tencolor);
+    transition: 0.2s all;
+    cursor: pointer;
+    margin-top: 10px;
+}
+input[type = "submit"]:hover{
+    background-color: transparent;
+    color: var(--tencolor);
+}
+
+p{
+    font-size: 0.82em;
+    color: white;
+    opacity: 70%;
+    padding-top: 20px;
+
+}
+p a{
+    color: var(--simplecolor);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+:root {
+  --bgcolor: #06141D;
+  --secondaryColor: #1B2730;
+  --tencolor: #7BA3FF;
+  --simplecolor: #2365FF;
+}
